@@ -1,16 +1,3 @@
-const timeTravel = [
-'12 Monkeys',
-'Back to the Future',
-'Groundhog Day',
-'Source Code',
-'Looper',
-'The Lake House',
-'Timecrimes',
-'Déjà vu',
-'Predestination',
-'Edge of Tomorrow'
-];
-
 timeTravel.forEach(function(name) {
   const url = `http://www.omdbapi.com/?apikey=7250cff9&t=${name}`;
   fetch(url)
