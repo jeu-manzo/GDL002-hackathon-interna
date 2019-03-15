@@ -56,6 +56,19 @@ body {
   background-color: #ebe217;
 }
 
+@media only screen and (max-width: 600px) {
+  .nav-container{
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .ul-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+  }
+}
+
 .flex-item{
   display: flex;
 }
@@ -117,6 +130,13 @@ body {
   font-size: 40px;
   margin: 40px auto;
 }
+
+#socials {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 
 .fa {
   padding: 20px;
