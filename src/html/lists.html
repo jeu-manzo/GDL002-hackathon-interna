@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Lists</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,13 +12,17 @@
     <div class="main content flex-container">
 
       <nav class="content nav-container">
-        <a href="index.html"><img class="content flex-item item-logo" src="img/logo2.png"></a>
+        <a href="index.html"><img class="content flex-item item-logo" src="../img/logo2.png"></a>
         <ul class="content flex-item ul-container">
           <li class="content flex-item item-header"><a class="link-header" href="top-ten.html">Las 10 más</a></li>
           <li class="content flex-item item-header"><a class="link-header" href="about.html">Nosotros</a></li>
           <li class="content flex-item item-header"><a class="link-header" href="curious.html">Sci-Curiosos</a></li>
         </ul>
-        <a href="#"><img class="content flex-item item-search"  id="search" src="img/buscar.svg" alt=""></a>
+        <a><img class="content flex-item item-search" id="search" src="../img/buscar.svg" alt=""></a>
+        <div class="search-container">
+          <input id="search-input" type="search" name="" value="" placeholder="Search movie only by Title">
+          <a><img class="content flex-item item-search" id="exit" src="../img/exit.svg" width="25px" height="25px" ></a>
+        </div>
       </nav>
 
       <div class="lists-container">
@@ -38,17 +42,18 @@
     <footer class="content footer-container">
       <ul class=" content ul-footer-container">
         <p class="content item-footer">Colaboradoras:</p>
-        <li class="content item-footer"><a href="#" target="_blank">Liz</a></li>
-        <li class="content item-footer"><a href="#" target="_blank">March</a></li>
-        <li class="content item-footer"><a href="https://github.com/jeu-manzo" target="_blank">Jeu</a></li>
+        <li class="content item-footer"><a href="https://github.com/March-Hdz-Carba" target="_blank">Lizeth García</a></li>
+        <li class="content item-footer"><a href="https://github.com/LizGarciaC" target="_blank">Marcela Hernández</a></li>
+        <li class="content item-footer"><a href="https://github.com/jeu-manzo" target="_blank">Jeunette Manzo</a></li>
       </ul>
       <p class="content item-footer p-footer">Derechos Reservados</p>
+
 
     </footer>
 
     </div>
-    <script src="lists.js"></script>
-    <script src="main.js"></script>
-    <script src="data.js"></script>
+    <script src="../data.js"></script>
+    <script src="../lists.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>
