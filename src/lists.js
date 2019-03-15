@@ -11,8 +11,10 @@ const timeTravel = [
 'Edge of Tomorrow'
 ];
 
+// console.log(timeTravel);
+
 const fromSpace = [
-'Interestellar',
+'Interstellar',
 'Gravity',
 'The Martian',
 'Alien',
