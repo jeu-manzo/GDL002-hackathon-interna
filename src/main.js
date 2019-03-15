@@ -28,9 +28,8 @@ function exit() {
 let inputSearchValue = '';
 
 searchInput.addEventListener("keyup", function(event) {
-  inputSearchValue = event.target.value;
   if (event.keyCode == 13) {
-    open('movies.html');
-    // searchMovie(inputSearchValue);
+    inputSearchValue = event.target.value;
+    open('movies.html')
   }
 });
