@@ -23,3 +23,12 @@ function exit() {
   display([searchIcon]);
   display([searchInput, exitIcon], "none");
 }
+
+let inputSearchValue = '';
+
+searchInput.addEventListener("keyup", function(event) {
+  inputSearchValue = event.target.value;
+  if (event.keyCode == 13) {
+    open('movies.html');
+  }
+});
