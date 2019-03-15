@@ -1,104 +1,25 @@
+const searchInput = document.getElementById('search-input');
+const searchIcon = document.getElementById('search');
+const exitIcon = document.getElementById('exit');
 
-// var listMovies = [];
-let element = document.getElementById('element');
-let list = '';
-let i = [];
-
-
-
-const listMovies = fromSpace.forEach(function(name){
-  api(name).then((response) => console.log(response));
-  // API(name).then(element.innerHTML = `<span>${}</span>`);
-})
-
-
-// function mostrar(a) {
-//   element.innerHTML = `<span>${a}</span>`
-// }
-//
-// mostrar("pruebas")
-
-  async function api(urlforanea){
-  const url = 'http://www.omdbapi.com/?apikey=7250cff9&t=$';
-  const response = await fetch(url + urlforanea);
-  const data = await response.json()
-  return data.Poster
+function display (elements, display = 'flex') {
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].style.display = display;
+  }
 }
 
-// API(fromSpace).then(console.log);
 
-// const filterCategory = fromSpace.forEach(function(name) {
-//   const url = `http://www.omdbapi.com/?apikey=7250cff9&t=${name}`;
-//   fetch(url)
-//   .then(response => response.json() )
-//   .then(data => {
-//     // list += `<br><span>${data.Title}</span><br>`;
-//     listMovies.push(data.Poster)
-//     listMovies.forEach(function(i) {
-//       array = i;
-//     })
-//     // console.log(listMovies[0]);
-//   })
-//   .catch(err => console.log(err))
-// });
+display([searchInput, exitIcon], "none");
 
 
+searchIcon.addEventListener("click", search);
+function search() {
+  display([searchInput, exitIcon]);
+  display([searchIcon], "none");
+}
 
-
-
-
-
-// var sum = '';
-//
-//
-// for (var item in listMovies) {
-//   sum += item;
-// }
-//
-// console.log(sum);
-
-// for (var i = 0; i < listMovies.length; i++) {
-//   console.log(listMovies[i]);
-//   list += `<br><span>${listMovies[i]}</span><br>`;
-// }
-// element.innerHTML = list;
-
-
-
-// console.log(listMovies);
-
-// let element = document.getElementById('element');
-// element.innerHTML = `<p>${listMovies}<p>`;
-
-
-// listMovies = listMovies
-// let list = "";
-// let element = document.getElementById('element');
-// for (var i = 0; i < listMovies.length; i++) {
-//   list += `<span>${listMovies[i]}</span>`;
-//
-// }
-// element.innerHTML = list;
-
-
-
-
-
-// function showCategory(listMovies) {
-//   for (var i = 0; i < listMovies.length; i++) {
-//     console.log(listMovies[i])
-//
-//   }
-//
-//   // listMovies.forEach(function(i) {
-//   //   console.log(i.prueba);
-//   // //   let element = document.getElementById('element');
-//   // //   console.log(i.Poster);
-//   // //   element.innerHTML = `<p>${i.Poster}<p>`;
-//   //
-//   //
-//   // })
-// }
-
-
-// console.log(showCategory(listMovies))
+exitIcon.addEventListener("click", exit);
+function exit() {
+  display([searchIcon]);
+  display([searchInput, exitIcon], "none");
+}

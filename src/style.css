@@ -41,6 +41,11 @@ body {
   color: #8477d6;
 }
 
+.search-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .item-search{
   padding: 16px;
   border-radius: 5px;
