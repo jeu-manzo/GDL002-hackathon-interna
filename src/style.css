@@ -202,5 +202,24 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
+  align-items: center;
+  justify-content:
+}
 
+.movie-item {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  justify-content:
+}
+
+.curious-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.item-curious {
+  margin: 10px auto;
 }
