@@ -7,7 +7,7 @@ let i = [];
 
 
 const listMovies = fromSpace.forEach(function(name){
-  api(name).then(console.log);
+  api(name).then((response) => console.log(response));
   // API(name).then(element.innerHTML = `<span>${}</span>`);
 })
 
