@@ -53,7 +53,28 @@ body {
 }
 
 .footer-container {
-  /* background-color: black; */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: black;
   margin: 0px;
-  /* color: white; */
+  color: white;
+}
+
+.ul-footer-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ul-footer-container p {
+  margin-bottom: 0px;
+}
+
+.p-footer {
+  display: flex;
+  justify-content: center;
 }
