@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'Audiowide', cursive;
 }
 
 .content{
@@ -11,6 +12,12 @@ body {
   background-color: #8477d6;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
+}
+
+.item-logo {
+  width: 240px;
+  height: 44px;
 }
 
 .ul-container{
@@ -18,12 +25,30 @@ body {
 }
 
 .item-header {
-  padding: 5px;
   margin: 5px;
 }
 
+.link-header{
+  text-decoration-line: none;
+  padding: 16px 16px;
+  border-radius: 5px;
+  color: #ebe217;
+  font-size: 25px;
+}
+
+.link-header:hover {
+  background-color: #ebe217;
+  color: #8477d6;
+}
+
 .item-search{
-  margin: 15px;
+  padding: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-search:hover {
+  background-color: #ebe217;
 }
 
 .flex-item{
